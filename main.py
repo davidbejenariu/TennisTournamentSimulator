@@ -379,8 +379,7 @@ if __name__ == '__main__':
     servePoints = [(0, 0)]
 
     for j in range(5):
-        print(surfaces[np.random.randint(0, 3)])
-        print(simulator.simulateTournament(surfaces[np.random.randint(0, 3)]))
+        simulator.simulateTournament(surfaces[np.random.randint(0, 3)])
 
         # print(simulator.playersData[player].pointsWon / simulator.playersData[player].totalPoints)
         points.append((simulator.playersData[player].pointsWon - points[-1][0],
